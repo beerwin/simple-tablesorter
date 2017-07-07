@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Table sorter for Knockout</title>
+	<link href="style/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h1>
+	  Simple vanilla JS table sorter with Knockout JS
+	</h1>
+	<div>
+	  <button id="aaa">
+	    Replace content
+	  </button>
+	</div>
+	<table id="s">
+		<thead>
+			<tr>
+				<th>List</th>
+				<th>Count</th>
+				<th>Score</th>
+				<th>Delta</th>
+			</tr>
+		</thead>
+		<tbody data-bind="foreach: items">
+			<tr>
+				<td data-bind="text: a"></td>
+				<td data-bind="text: b"></td>
+				<td data-bind="text: c"></td>
+				<td data-bind="text: d"></td>
+			</tr>
+		</tbody>
+	</table>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-debug.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.js"></script>
+	<script src="../Src/tablesort.js"></script>
+	<script src="script/demo.js"></script>
+</body>
+</html>

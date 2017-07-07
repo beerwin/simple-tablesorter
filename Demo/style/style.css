@@ -1,0 +1,92 @@
+body {
+  font-family: "Segoe UI", "Trebuchet MS", helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: normal;
+  color: rgb(51, 102, 153);
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 15px; 5px;
+  margin: 5px auto;
+  font-size: 18px;
+  background-color: rgba(255,127,48,1);
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(255,127,48,.8);
+}
+
+button:disabled {
+  background-color: rgba(127,127,127,.9);
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+div {
+  text-align: center;
+}
+
+th {
+  color: rgb(51, 102, 153);
+  background-color: rgba(127,127,127,.2);
+  border-bottom: 2px solid rgba(127,127,127, .5);
+  cursor: pointer;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+th:hover {
+  background-color: rgba(127,127,127,.3);
+  border-bottom: 2px solid rgba(127,127,127, .8);
+}
+
+th, td {
+  padding: 5px 3px;
+  text-align: right;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(127,127,127,.05);
+}
+
+th:nth-child(1),
+td:nth-child(1){
+  text-align: left;
+}
+
+th.sortDown,
+th.sortUp {
+  border-bottom: 2px solid rgba(51, 102, 153, .5);
+  padding-right: 15px;
+  position: relative;
+}
+
+th.sortDown:after {
+	content: "\25BE";
+  vertical-align: top;
+  position: absolute;
+  right: 0;
+}
+
+th.sortUp:after {
+	content: "\025B4";
+  vertical-align: top;
+  position: absolute;
+  right: 0;
+}
