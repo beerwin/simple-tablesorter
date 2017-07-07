@@ -35,6 +35,7 @@ var data = ko.mapping.fromJS({items: []});
 
 // bind data to DOM element
 ko.applyBindings(data, document.getElementById("s"));
+
 var sTableSort = new tableSort({
 	selector: "table#s", 
   sortColumn: 1, 

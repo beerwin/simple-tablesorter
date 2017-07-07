@@ -195,7 +195,6 @@ var tableSort = function(options) {
 			selector: '#tableSort',
 			sortColumn: 0,
 			sortDirection: "asc",
-			defaultSortDirection: "asc",
 			orderTypes: []
 		}, options);
 	};
